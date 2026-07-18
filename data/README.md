@@ -2,7 +2,6 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Python Version](https://img.shields.io/badge/python-3.8%20%7C%203.9%20%7C%203.10-blue.svg)](requirements.txt)
-[![MATLAB Version](https://img.shields.io/badge/MATLAB-R2021a%20or%20newer-orange.svg)](TECHNICAL_DOCUMENTATION.md)
 
 ## Repository Overview
 
@@ -58,7 +57,7 @@ To support clean codebase management, files are organized into logical partition
 | **[`requirements.txt`](requirements.txt)** | Python environment dependency package list. |
 | **[`LICENSE`](LICENSE)** | MIT open-source license. |
 | **`/notebooks/`** | Contains Jupyter Notebooks (e.g., [`EEG_BCI_MI_Pipeline.ipynb`](New%20folder/EEG_BCI_MI_Pipeline.ipynb)) for interactive development. |
-| **`/src/`** or **`/code/`** | Core scripts containing the pipeline methods ([`Final_Colab_Master.py`](New%20folder/Final_Colab_Master.py)) and MATLAB analysis files ([`Matlab/`](Matlab/) / [`Matlab_Functions/`](New%20folder/code/code/)). |
+| **`/src/`** or **`/code/`** | Core scripts containing the pipeline methods ([`Final_Colab_Master.py`](New%20folder/Final_Colab_Master.py)). |
 | **`/docs/`** | Supplementary reading, block diagrams, and explainers. |
 | **`/fpga/`** | *(Proposed)* Hardware description files (Verilog/VHDL) and PYNQ deployment notebooks. |
 
@@ -66,7 +65,6 @@ To support clean codebase management, files are organized into logical partition
 
 ## Getting Started
 
-### 1. Python Environment Setup
 1. Clone the repository and navigate into the root directory.
 2. Install the required Python packages:
    ```bash
@@ -76,12 +74,6 @@ To support clean codebase management, files are organized into logical partition
    ```bash
    jupyter notebook notebooks/EEG_BCI_MI_Pipeline.ipynb
    ```
-
-### 2. MATLAB Setup
-To run the traditional signal processing visualizations (e.g., ERP, Time-Frequency, Brain Electrical Activity Mapping):
-1. Install [EEGLAB](https://sccn.ucsd.edu/eeglab/index.php).
-2. Install the [Covariance Toolbox](https://github.com/alexandrebarachant/covariancetoolbox).
-3. Run the MATLAB scripts located under `code/code/`. Run `PlotFigure.m` to generate brain topomaps and `PlotAccuracy.m` to compute validation metrics.
 
 ---
 
