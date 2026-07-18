@@ -56,8 +56,8 @@ To support clean codebase management, files are organized into logical partition
 | **[`DATASET_GUIDE.md`](DATASET_GUIDE.md)** | Clinical cohort statistics, channel layout, and data parsing details. |
 | **[`requirements.txt`](requirements.txt)** | Python environment dependency package list. |
 | **[`LICENSE`](LICENSE)** | MIT open-source license. |
-| **`/notebooks/`** | Contains Jupyter Notebooks (e.g., [`EEG_BCI_MI_Pipeline.ipynb`](New%20folder/EEG_BCI_MI_Pipeline.ipynb)) for interactive development. |
-| **`/src/`** or **`/code/`** | Core scripts containing the pipeline methods ([`Final_Colab_Master.py`](New%20folder/Final_Colab_Master.py)). |
+| **`/notebook/`** | Contains Jupyter Notebooks (e.g., [`EEG_BCI_MI_Pipeline.ipynb`](notebook/EEG_BCI_MI_Pipeline.ipynb)) for interactive development. |
+| **`/src/`** | Core scripts containing the pipeline methods ([`Final_Colab_Master.py`](src/Final_Colab_Master.py)). |
 | **`/docs/`** | Supplementary reading, block diagrams, and explainers. |
 | **`/fpga/`** | *(Proposed)* Hardware description files (Verilog/VHDL) and PYNQ deployment notebooks. |
 
@@ -72,7 +72,7 @@ To support clean codebase management, files are organized into logical partition
    ```
 3. Open the interactive pipeline notebook in your local environment or Google Colab:
    ```bash
-   jupyter notebook notebooks/EEG_BCI_MI_Pipeline.ipynb
+   jupyter notebook notebook/EEG_BCI_MI_Pipeline.ipynb
    ```
 
 ---
